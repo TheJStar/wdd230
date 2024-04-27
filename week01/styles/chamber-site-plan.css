@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Robot", Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: #00cc66;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px dotted #008141;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: auto;
+}
+
+.card {
+    margin: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #6a6a6a;
+    text-align: center;
+}
+
+.card h2 {
+    background-color: #33ccff;
+    height: 30px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.clean {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.color1 {
+    background-color: #ffffff;
+}
+
+.color2 {
+    background-color: #33ccff;
+}
+
+.color3 {
+    background-color: #00cc66;
+}
