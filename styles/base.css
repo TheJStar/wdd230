@@ -24,7 +24,30 @@ header span {
     margin: auto auto;
 }
 
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "|||";
+}
+
+.open {
+    display: block;
+}
+
 nav {
+    display: none;
     height: 100%;
     background-color: black;
 }
