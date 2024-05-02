@@ -131,7 +131,6 @@ h1, h2, .person-name {
 h1 {
     font-size: 20px;
     margin: 10px 0;
-    color: var(--text-color);
 }
 
 h2 {
@@ -151,8 +150,53 @@ header, footer {
     border: 0;
     border-radius: 5px;
     padding: 3px;
+    cursor: pointer;
 }
 
 #theme::before {
     content: "🌗";
+}
+
+/* dark mode */
+
+.dark {
+    background-color: #141414;
+    color: white;
+}
+
+#theme.dark {
+    background-color: white;
+}
+
+#theme.dark::before {
+    content: "☀️";
+}
+
+nav ul li a.dark {
+    background: none;
+    color: #141414;
+}
+
+#navigation.dark {
+    background-color: white;
+}
+
+header.dark, footer.dark {
+    background-color: #2d5d4d;
+}
+
+.person-name.dark {
+    background: none;
+}
+
+h2.dark {
+    background-color: #2d5d4d;
+}
+
+.week.dark {
+    color: white;
+}
+
+.week a.dark {
+    color: aqua;
 }
