@@ -1,9 +1,17 @@
+html {
+    --base-color: aquamarine;
+    --background-color: white;
+    --text-color: black;
+    --accent-color: blue;
+}
+
 * {
     margin: 0;
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
 }
 
 header {
@@ -28,7 +36,7 @@ header span {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: var(--text-color);
  	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -49,7 +57,7 @@ header span {
 nav {
     display: none;
     height: 100%;
-    background-color: black;
+    background-color: var(--text-color);
 }
 
 nav ul {
@@ -67,7 +75,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
 }
 
@@ -95,6 +103,14 @@ main ul {
     padding: 10px;
 }
 
+.card ul li {
+    color: var(--text-color);
+}
+
+.card ul li a {
+    color: var(--accent-color);
+}
+
 footer {
     height: 80px;
     width: 100%;
@@ -104,18 +120,19 @@ footer {
     padding: 20px;
 }
 
-h1, h2 {
+h1, h2, .person-name {
     text-align: center;
+    color: var(--text-color);
 }
 
 h1 {
     font-size: 20px;
     margin: 10px 0;
-    color: rgb(83, 83, 83);
+    color: var(--text-color);
 }
 
 h2 {
-    background-color: aquamarine;
+    background-color: var(--base-color);
     height: 30px;
     padding: 10px;
     border-top-left-radius: 10px;
@@ -123,5 +140,16 @@ h2 {
 }
 
 header, footer {
-    background-color: aquamarine;
+    background-color: var(--base-color);
+}
+
+#theme {
+    background-color: var(--text-color);
+    border: 0;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#theme::before {
+    content: "🌗";
 }
