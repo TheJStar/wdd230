@@ -43,7 +43,7 @@ header span {
 }
 
 #menu::before {
-	content: "☰";
+	content: "\2630";
 }
 
 #menu.open::before {
