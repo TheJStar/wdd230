@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber - WDD 230 Joel Ayvazyan</title>
+    <meta name="description" content=" Chamber Site homepage, a website for our communities buisnesses, WDD 230, Joel Ayvazyan, Web Frontend Development">
+    <meta name="author" content="Joel Ayvazyan">
+    <meta name="og:title" content="Chamber - WDD 230 Joel Ayvazyan">
+    <meta name="og:type" content="chamber news">
+    <meta name="og:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="og:url" content="https://thejstar.github.io/wdd230/chamber">
+    <meta name="twitter:title" content="Chamber - WDD 230 Joel Ayvazyan">
+    <meta name="twitter:type" content="chamber news">
+    <meta name="twitter:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="twitter:url" content="https://thejstar.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div></div>
+        <img id="logo" src="images/chamber-logo.png" alt="Logo">
+    </header>
+    <button type="button" id="menu" aria-label="hamburger"></button>
+    <nav id="navigation">
+        <ul>
+            <li><a aria-label="home page" href="#">Home</a></li>
+            <li><a aria-label="Chamber" href="#">Discovery</a></li>
+            <li><a aria-label="Site plan" href="#">Directory</a></li>
+            <li><a aria-label="Form" href="#">Join</a></li>
+        </ul>
+    </nav>
+    <div id="hero">
+        <img src="https://source.unsplash.com/random/1000x300?blur" alt="hero">
+        <a href="#">Join Our Chamber</a>
+    </div>
+    <main>
+        <section id="events" class="card">
+            <h2>Events</h2>
+            <div>
+                <h3>Epic Event</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Doloribus quidem suscipit commodi ullam nobis porro veritatis 
+                    quo ducimus non accusantium, recusandae itaque. Nisi, inventore 
+                    amet at maiores obcaecati voluptatum velit!
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Weather</h2>
+            <div>
+                <p>0 C</p>
+                <p>Sunny day☀️</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <h2>Comapny 1</h2>
+            <div>
+                <p>Detail Text</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <h2>Comapny 2</h2>
+            <div>
+                <p>Detail Text</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <h2>Comapny 3</h2>
+            <div>
+                <p>Detail Text</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="details">
+            <p>&copy; <span id="copyRightDate"></span> | Joel Ayvazyan | Armenia</p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="contacts">
+            <h3>Contacts</h3>
+            <p>kingoflightj@gmail.com</p>
+            <p>+374(43)917102</p>
+        </div>
+        <div id="footer-tech">
+            <img id="logo" src="images/chamber-logo.png" alt="Logo">
+            <button type="button" id="theme" aria-label="dark mode button"></button>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/themeChanger.js"></script>
+</body>
+</html>
