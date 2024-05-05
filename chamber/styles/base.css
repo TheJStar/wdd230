@@ -191,6 +191,11 @@ footer div {
     flex-direction: column;
 }
 
+#footer-tech {
+    height: 100px;
+    width: 100px;
+}
+
 h1, h2, .person-name {
     text-align: center;
     color: var(--text-color);
