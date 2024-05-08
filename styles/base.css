@@ -3,6 +3,7 @@ html {
     --background-color: white;
     --text-color: black;
     --accent-color: blue;
+    height: 100%;
 }
 
 * {
@@ -12,6 +13,11 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
+
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -93,6 +99,28 @@ main {
     grid-template-columns: 1fr;
 }
 
+.hero {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.hero picture {
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 10%;
+    z-index: 0;
+    padding: 0 10px;
+    background-color: rgba(87, 87, 87, 0.651);
+}
+
+.overlay h1 {
+    color: aliceblue;
+}
+
 main section {
     border: 1px solid darkgray;
     border-radius: 10px;
@@ -114,13 +142,23 @@ main ul {
     color: var(--accent-color);
 }
 
+.map {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 90%;
+    min-width: 300px;
+    max-width: 600px;
+}
+
 footer {
     height: 80px;
     width: 100%;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    padding: 20px;
+    padding: 20px 0;
+    margin-top: auto;
 }
 
 h1, h2, .person-name {

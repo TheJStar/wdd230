@@ -38,6 +38,15 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <img class="hero-image" src="images/hero-large.webp" alt="Thailand temple" width="350" height="175" loading="lazy">
+            </picture>
+            <div class="overlay">
+                <h1>Copenhagen Denmark Temple</h1>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
@@ -54,7 +63,12 @@
             <h2>Information</h2>
         </section>
     </main>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6096.671962906913!2d44.50692742174891!3d40.179335732185784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa2dab8fc8b5b%3A0x3d1479ae87da526a!2sYerevan!5e0!3m2!1sen!2sam!4v1715181068121!5m2!1sen!2sam" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
+        <span>Number of visits: </span><span class="visits"></span>
         <p>&copy; <span id="copyRightDate"></span> | Joel Ayvazyan | Armenia</p>
         <p id="lastModified"></p>
         <button type="button" id="theme" aria-label="dark mode button"></button>
@@ -62,5 +76,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/themeChanger.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 </html>
