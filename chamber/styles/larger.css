@@ -20,6 +20,15 @@
         flex-direction: row;
         list-style: none;
     }
+
+    h1 {
+        font-size: 200%;
+        grid-column: 1 / 4;
+    }
+
+    h3 {
+        padding: 10px 0;
+    }
     
     main .sidebar {
         grid-column: 1 / 2;
@@ -36,6 +45,7 @@
 
     .sidebar {
         grid-row: 1 / 4;
+        grid-row: 2;
     }
 
     .gallery:hover .clips:not(.clips:hover) {
