@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - WDD 230 Joel Ayvazyan</title>
+    <meta name="description" content="Chamber of Commerce, discovery of our promoted buisnesses, WDD 230, Joel Ayvazyan, Web Frontend Development">
+    <meta name="author" content="Joel Ayvazyan">
+    <meta name="og:title" content="Chamber of Commerce - WDD 230 Joel Ayvazyan">
+    <meta name="og:type" content="chamber discovery">
+    <meta name="og:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="og:url" content="https://thejstar.github.io/wdd230/chamber">
+    <meta name="twitter:title" content="Chamber of Commerce - WDD 230 Joel Ayvazyan">
+    <meta name="twitter:type" content="chamber discovery">
+    <meta name="twitter:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="twitter:url" content="https://thejstar.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div></div>
+        <img id="logo" src="images/chamber-logo.webp" alt="Logo">
+    </header>
+    <button type="button" id="menu" aria-label="hamburger"></button>
+    <nav id="navigation">
+        <ul>
+            <li><a aria-label="home page" href="index.html">Home</a></li>
+            <li><a aria-label="discovery" href="discover.html">Discovery</a></li>
+            <li><a aria-label="directory" href="#">Directory</a></li>
+            <li><a aria-label="join" href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <section class="card">
+                <h2>Description</h2>
+                <div>
+                    <p>this page will show our newsest buisness and places of interest</p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Visits</h2>
+                <div>
+                    <span>Visits: </span><span class="visits"></span>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Weather</h2>
+                <div>
+                    <p>0 C</p>
+                    <p>Sunny day☀️</p>
+                </div>
+            </section>
+        </div>
+        <div class="gallery">
+            <div class="place-interest">
+                <picture>
+                    <source srcset="images/cascade-small.webp" media="(max-width: 500px)">
+                    <img id="num1" class="clips" src="images/cascade.webp" alt="Cascade" loading="lazy">
+                </picture>
+                <div class="overlay">
+                    <h3>Cascade</h3>
+                </div>
+            </div>
+            <div class="place-interest">
+                <picture>
+                    <source srcset="images/katoghike-church-small.webp" media="(max-width: 500px)">
+                    <img class="clips" src="images/katoghike-church.webp" alt="Katoghike Church" loading="lazy">
+                </picture>
+                <div class="overlay">
+                    <h3>Katoghike Church</h3>
+                </div>
+            </div>
+            <div class="place-interest">
+                <picture>
+                    <source srcset="images/mother-armenia-small.webp" media="(max-width: 500px)">
+                    <img class="clips" src="images/mother-armenia.webp" alt="Mother Armenia" loading="lazy">
+                </picture>
+                <div class="overlay">
+                    <h3>Mother Armenia</h3>
+                </div>
+            </div>
+            <div class="place-interest">
+                <picture>
+                    <source srcset="images/october-revolution-memorial-obelisk-small.webp" media="(max-width: 500px)">
+                    <img class="clips" src="images/october-revolution-memorial-obelisk.webp" alt="October Revolution Memorial Obelisk" loading="lazy">
+                </picture>
+                <div class="overlay">
+                    <h3>October Revolution Memorial Obelisk</h3>
+                </div>
+            </div>
+            <div class="place-interest">
+                <picture>
+                    <source srcset="images/republic-square-small.webp" media="(max-width: 500px)">
+                    <img class="clips" src="images/republic-square.webp" alt="Republic Square" loading="lazy">
+                </picture>
+                <div class="overlay">
+                    <h3>Republic Square</h3>
+                </div>
+            </div>
+            <div class="place-interest">
+                <picture>
+                    <source srcset="images/yerevan-manuscript-museum-small.webp" media="(max-width: 500px)">
+                    <img class="clips" src="images/yerevan-manuscript-museum.webp" alt="Yerevan Manuscript Museum" loading="lazy">
+                </picture>
+                <div class="overlay">
+                    <h3>Yerevan Manuscript Museum</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="details">
+            <p>&copy; <span id="copyRightDate"></span> | Joel Ayvazyan | Armenia</p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="contacts">
+            <h3>Contacts</h3>
+            <p>kingoflightj@gmail.com</p>
+            <p>+374(43)917102</p>
+        </div>
+        <div id="footer-tech">
+            <img src="images/chamber-logo.webp" alt="Logo">
+            <button type="button" id="theme" aria-label="dark mode button"></button>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/themeChanger.js"></script>
+    <script src="scripts/visitCounter.js"></script>
+</body>
+</html>
