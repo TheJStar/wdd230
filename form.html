@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Ayvazyan - WDD 230 - Web Frontent Development</title>
+    <meta name="description" content="WDD 230, Joel Ayvazyan, Web Frontend Development course assignment portal, homepage">
+    <meta name="author" content="Joel Ayvazyan">
+    <meta name="og:title" content="WDD 230 Joel Ayvazyan">
+    <meta name="og:type" content="assignment">
+    <meta name="og:image" content="https://thejstar.github.io/wdd230/images/joel-ayvazyan-photo.jpg">
+    <meta name="og:url" content="https://thejstar.github.io/wdd230">
+    <meta name="twitter:title" content="WDD 230 Joel Ayvazyan">
+    <meta name="twitter:type" content="assignment">
+    <meta name="twitter:image" content="https://thejstar.github.io/wdd230/images/joel-ayvazyan-photo.jpg">
+    <meta name="twitter:url" content="https://thejstar.github.io/wdd230">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/joel-ayvazyan-photo.webp" alt="Joel Ayvazyans photo" width="62" height="80">
+        <span class="person-name"><b>Joel Ayvazyan</b></span>
+    </header>
+    <button type="button" id="menu" aria-label="hamburger"></button>
+    <nav id="navigation">
+        <ul>
+            <li><a aria-label="home page" href="#">Home</a></li>
+            <li><a aria-label="Chamber" href="chamber/">Chamber</a></li>
+            <li><a aria-label="Site plan" href="#">Site Plan</a></li>
+            <li><a aria-label="Form" href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Fill out form</h1>
+        <div id="formmessage"></div>
+        <p>👮‍♂️ indicates a required field</p>
+        <form action="record.html" method="get">
+            <label for="username" class="required">Username</label>
+            <input type="text" id="username" name="username" 
+            required title="Enter username should be at least 5 characters long" pattern="\S{5,}"
+            placeholder="Min 5 characters long, no spaces">
+            <label for="password" class="required">Password</label>
+            <input type="password" id="password" name="password" 
+            required title="The user inputted value must be at least eight (8) characters long and can only be alpha-numeric" pattern="[A-Za-z0-9]{8,}"
+            placeholder="Min 8 characters long alpha-numeric">
+            <label for="repeat-password">Confirm Password</label>
+            <input type="password" id="repeat-password" name="repeat-password" 
+            required title="Must match the password inputed above" pattern="[A-Za-z0-9]{8,}"
+            placeholder="Repeat password">
+            <label for="email" class="required">Email</label>
+            <input type="email" id="email" name="email" 
+            required title="Please enter a valid email address" pattern="[a-zA-z0-9._%+-]+@byu\.edu$"
+            placeholder="Enter you byu student email">
+            <label for="page-rating">Page Rating</label>
+            <div id="rangevalue">0</div>
+            <input list="rangevalues" type="range" id="page-rating" name="page-rating" min="0" max="10" value="0" step="1">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>    
+            <label for="submit">Submit Form</label>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyRightDate"></span> | Joel Ayvazyan | Armenia</p>
+        <p id="lastModified"></p>
+        <button type="button" id="theme" aria-label="dark mode button"></button>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/themeChanger.js"></script>
+    <script src="scripts/checkPassword.js"></script>
+    <script src="scripts/rater.js"></script>
+</body>
+</html>

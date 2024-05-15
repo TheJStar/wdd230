@@ -7,7 +7,7 @@ currentVisitTime = Date.now();
 
 if (numVisits !== 0 && (currentVisitTime - timeBeforeVisit) / 86400000 > 24) {
     visitCounter.textContent = `Your last visits was ${Math.floor((currentVisitTime - timeBeforeVisit) / 86400000)} ago`
-} else if ((currentVisitTime - timeBeforeVisit) / 86400000 < 24) {
+} else if (numVisits !== 0 && (currentVisitTime - timeBeforeVisit) / 86400000 < 24) {
     visitCounter.textContent = "Back so Soon? Awsome!";
 } else {
     visitCounter.textContent = "Welcome to my website. I see this is your first time 😶‍🌫️";

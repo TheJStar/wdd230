@@ -27,10 +27,10 @@ themeButton.addEventListener('click', () => {
             a.classList.toggle("dark");
         })
     })
-    h1[1].classList.toggle("dark");
-    // h1.forEach(h => {
-    //     h.classList.toggle("dark");
-    // })
+    // h1[1].classList.toggle("dark");
+    h1.forEach(h => {
+        h.classList.toggle("dark");
+    })
     h2.forEach(h => {
         h.classList.toggle("dark");
     })
