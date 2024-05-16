@@ -7,7 +7,7 @@ main {
 :root {
     --inactive:  rgb(229, 242, 233);
     --active: rgb(138, 163, 146);
-    
+    --accent-color: aquamarine;
 }
 
 p {
@@ -47,8 +47,8 @@ input:focus {
 }
 
 input[type="range"] {
-    accent-color: aquamarine;
-    color: aquamarine;
+    accent-color: var(--accent-color);
+    color: var(--accent-color);
     cursor: pointer;
 }
 
