@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join our Chamber of Commerce - WDD 230 Joel Ayvazyan</title>
+    <meta name="description" content="Chamber of Commerce, join our chamber of Commerce, WDD 230, Joel Ayvazyan, Web Frontend Development">
+    <meta name="author" content="Joel Ayvazyan">
+    <meta name="og:title" content="Join our Chamber of Commerce - WDD 230 Joel Ayvazyan">
+    <meta name="og:type" content="chamber join">
+    <meta name="og:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="og:url" content="https://thejstar.github.io/wdd230/chamber">
+    <meta name="twitter:title" content="Join our Chamber of Commerce - WDD 230 Joel Ayvazyan">
+    <meta name="twitter:type" content="chamber join">
+    <meta name="twitter:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="twitter:url" content="https://thejstar.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div></div>
+        <img id="logo" src="images/chamber-logo.webp" alt="Logo">
+    </header>
+    <button type="button" id="menu" aria-label="hamburger"></button>
+    <nav id="navigation">
+        <ul>
+            <li><a aria-label="home page" href="index.html">Home</a></li>
+            <li><a aria-label="discovery" href="discover.html">Discovery</a></li>
+            <li><a aria-label="directory" href="#">Directory</a></li>
+            <li><a aria-label="join" href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form-block">
+            <h1>Fill out form</h1>
+            <div id="formmessage"></div>
+            <p class="required">Indicates a required field</p>
+            <form action="thankyou.html" method="get">
+                <label for="first-name" class="required">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name" class="required">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="title-position" class="required">Title/Position</label>
+                <input type="text" id="title-position" name="title-position" required title="only aphanumeric, hyphens and spaces, min 7 chars" pattern="[a-zA-Z0-9- ]{7,}"
+                placeholder="min 7 chars, alphanumeric, hyphens and spaces">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" 
+                required title="Please enter a valid email address" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                placeholder="Enter you byu student email">
+                <label for="phone-number" class="required">Mobile Phone Number</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+                <label for="buisness-name" class="required">Buisness/Organization's Name</label>
+                <input type="text" id="buisness-name" name="buisness-name" required>
+                <label for="membership" class="required">Membership</label>
+                <select name="membership" id="membership">
+                    <option value="np">NP Membership is for non profit organizations and there is no fee</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                <label for="buisness-description">Buisness/Organization's Description</label>
+                <input type="text" id="buisness-description" name="buisness-description" placeholder="Describe you Buisness/Organization">
+                <input type="hidden" id="timestamp" name="timestamp">
+                <label for="submit">Submit Form</label>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="benefits">
+            <table>
+                <tr>
+                    <th>Benefits</th>
+                    <th>NP</th>
+                    <th>Bronze</th>
+                    <th>Silver</th>
+                    <th>Gold</th>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>Free</td>
+                    <td>$7.99</td>
+                    <td>$14.99</td>
+                    <td>$39.99</td>
+                </tr>
+                <tr>
+                    <td>Events</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Position in Discovery page</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Special Events</td>
+                    <td>✖️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Spotlight Position</td>
+                    <td>✖️</td>
+                    <td>✖️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Discounts</td>
+                    <td>✖️</td>
+                    <td>✖️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>VIP Requests</td>
+                    <td>✖️</td>
+                    <td>✖️</td>
+                    <td>✖️</td>
+                    <td>✔️</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="details">
+            <p>&copy; <span id="copyRightDate"></span> | Joel Ayvazyan | Armenia</p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="contacts">
+            <h2>Contacts</h2>
+            <p>kingoflightj@gmail.com</p>
+            <p>+374(43)917102</p>
+        </div>
+        <div id="footer-tech">
+            <img src="images/chamber-logo.webp" alt="Logo">
+            <button type="button" id="theme" aria-label="dark mode button"></button>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/themeChanger.js"></script>
+</body>
+</html>
