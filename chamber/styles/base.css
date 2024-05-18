@@ -327,10 +327,24 @@ input {
     border-bottom: 1px solid rgb(0, 91, 30);
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-color);
-    grid-column: 1 / 2;
 }
 
 input:focus {
+    background-color: var(--active);
+    outline: 0;
+}
+
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid rgb(0, 91, 30);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-color);
+    resize: none;
+}
+
+textarea:focus {
     background-color: var(--active);
     outline: 0;
 }
