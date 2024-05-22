@@ -1,9 +1,42 @@
 const baseURL = "https://github.com/TheJStar/wdd230/";
-const linksURL = "https://github.com/TheJStar/wdd230/data/links.json";
+const linksURL = "https://TheJStar.github.io/wdd230/data/links.json";
 
 async function getLinks(url) {
-    const respons = await fetch(url);
-    const data = await respons.json();
-    console.table(data);
+    try {
+        const respons = await fetch(url);
+        if (respons.ok) {
+
+        } else {
+            throw Error(await respons.text());
+        }
+        
+        const data = await respons.json();
+        console.table(data);
+        displayLinks(data);
+    } catch (error) {
+        console.log(error);
+    }
+    
 }
-getLinks("https://github.com/TheJStar/wdd230/data/links.json");
+
+function displayLinks(links) {
+    const card = document.querySelector("#assignments");
+    const ul = document.createElement("ul");
+    links.weeks.forEach(week => {
+        const li = document.createElement("li");
+        li.classList.add("week");
+        li.textContent = week.week + ": ";
+        week.links.forEach(link => {
+            const a = document.createElement("a");
+            a.ariaLabel = "assignment";
+            a.href = link.url;
+            a.textContent = link.title;
+            li.appendChild(a);
+            li.innerHTML += " | ";
+        })
+        ul.appendChild(li);
+        card.appendChild(ul);
+    });
+}
+
+getLinks(linksURL);
