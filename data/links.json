@@ -5,11 +5,11 @@
         "links": [
           {
             "url":"week01/holygrail.html",
-            "title":"HG Layout"
+            "title":"HolyGrail Layout"
           },
           {
             "url":"week01/media-query.html",
-            "title":"mQueries"
+            "title":"Media Query"
           }, 
           {
             "url":"week01/chamber-site-plan.html",
@@ -26,11 +26,11 @@
           },
           {
             "url":"week02/design.html",
-            "title":"Design"
+            "title":"Design Principles"
           }, 
           {
             "url":"https://codepen.io/TheeJStar-/pen/ZEZdYdv",
-            "title": "Design Principles"
+            "title": "CodePen Hamburger Menu"
           }
         ]
       },
