@@ -20,6 +20,10 @@ form {
     max-width: 500px;
 }
 
+text {
+    background-color: red;
+}
+
 input {
     margin: 10px 0;
     padding-left: 10px;

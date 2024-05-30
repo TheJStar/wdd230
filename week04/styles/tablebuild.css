@@ -1,0 +1,40 @@
+:root {
+    --background-color: rgb(255, 255, 255);
+    --active: rgba(128, 128, 128, 0.137);
+}
+
+.benefits {
+    z-index: -1;
+    width: 100%;
+    align-items: center;
+}
+
+table {
+    margin: auto;
+    
+    background-color: var(--background-color);
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+thead, thead th:nth-child(1) {
+    background-color: black;
+    color: white;
+    border: 0;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid var(--active);
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--active);
+}
+
+caption {
+    caption-side: bottom;
+    font-size: small;
+}
