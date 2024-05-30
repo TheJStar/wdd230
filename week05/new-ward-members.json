@@ -1,0 +1,22 @@
+{
+    "family-name": "Banana",
+    "move-in-date": 2012,
+    "family-members-count": 3,
+    "members": [
+        {
+            "name": "Jason Johns",
+            "gender": "male",
+            "birthday": "june-24-1970"
+        },
+        {
+            "name": "Mary Johns",
+            "gender": "female",
+            "birthday": "december-12-1972"
+        },
+        {
+            "name": "Bob Johns",
+            "gender": "male",
+            "birthday": "november-13-2005"
+        }
+    ]
+}

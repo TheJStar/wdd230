@@ -1,8 +1,8 @@
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
-const captionDescription = document.querySelector("figcaption");
+const captionDesc = document.querySelector("figcaption");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=40.19&lon=44.51&appid=4a974b3f0729cb02d19957576cc5d21c"
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&units=imperial&lon=6.64&appid=4a974b3f0729cb02d19957576cc5d21c";
 
 async function getWeatherData(url) {
     try {
@@ -25,7 +25,7 @@ function displayResults(data) {
     currentTemp.textContent = data.main.temp + currentTemp.textContent;
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     weatherIcon.alt = "Weather event";
-    captionDescription.textContent = data.weather[0].description;
+    captionDesc.textContent = data.weather[0].description;
 }
 
 getWeatherData(url);

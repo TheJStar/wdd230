@@ -149,6 +149,10 @@ main ul {
     padding: 10px;
 }
 
+#current-temp {
+    font-weight: 700;
+}
+
 .map {
     text-align: center;
     margin-top: 20px;

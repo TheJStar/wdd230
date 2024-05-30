@@ -51,12 +51,16 @@
         "week": "Week 4",
         "links": [
           {
-            "url":"week02/bom.html",
-            "title":"BOM"
+            "url":"week04/tablebuild.html",
+            "title":"Table Build"
           },
           {
-            "url":"week02/design.html",
+            "url":"week04/Form-start/index.html",
             "title":"Design"
+          },
+          {
+            "url":"https://codepen.io/TheeJStar-/pen/OJYWZLx",
+            "title":"CodePen Table"
           }
         ]
       },
@@ -64,12 +68,20 @@
         "week": "Week 5",
         "links": [
           {
-            "url":"week02/bom.html",
-            "title":"BOM"
+            "url":"https://codepen.io/TheeJStar-/pen/YzbNjNK",
+            "title":"CodePen Marker"
           },
           {
-            "url":"week02/design.html",
-            "title":"Design"
+            "url":"week05/prophets.html",
+            "title":"Prophets"
+          },
+          {
+            "url":"week05/new-ward-members.json",
+            "title":"Family Json"
+          },
+          {
+            "url":"week05/weather.html",
+            "title":"Weather API"
           }
         ]
       }
