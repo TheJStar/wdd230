@@ -22,7 +22,7 @@ async function getWeatherData(url) {
 }
 
 function displayResults(data) {
-    currentTemp.textContent = data.main.temp + currentTemp.textContent;
+    currentTemp.textContent = (data.main.temp - 273).toFixed(2) + currentTemp.textContent;
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     weatherIcon.alt = "Weather event";
     captionDescription.textContent = data.weather[0].description;
