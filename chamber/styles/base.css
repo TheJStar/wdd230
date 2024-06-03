@@ -432,6 +432,19 @@ tr:nth-child(even) {
 }
 
 /* Directory */
+.card-view {
+    grid-column: 1 / 2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card-view button {
+    height: 44px;
+    width: 100px;
+    border: 0;
+    border-radius: 2px;
+}
+
 
 .grid {
     grid-column: 1 / 2;

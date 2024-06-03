@@ -67,7 +67,7 @@
         grid-template-rows: auto 1fr;
     }
 
-    .grid, .list {
+    .grid, .list, .card-view {
         grid-column: 1 / 4;
     }
 
