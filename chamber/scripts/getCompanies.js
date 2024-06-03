@@ -44,7 +44,7 @@ function displayCompanies(companies) {
         section.appendChild(website);
         section.appendChild(image);
         section.appendChild(membershipLevel);
-        
+
         artical.appendChild(section);
     });
 }

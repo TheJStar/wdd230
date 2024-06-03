@@ -462,9 +462,9 @@ tr:nth-child(even) {
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
 	margin: 0;
-	padding: 0.25rem;
+    padding: 0.25rem;
 }
 
 .list section > * {
