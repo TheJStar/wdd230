@@ -10,7 +10,7 @@ async function getCompanies(url) {
         }
         
         const data = await respons.json();
-        console.table(data);
+        // console.table(data);
         displayCompanies(data);
     } catch (error) {
         console.log(error);
@@ -37,6 +37,24 @@ function displayCompanies(companies) {
         image.alt = "company logo";
         const membershipLevel = document.createElement("h3");
         membershipLevel.textContent = member.membershipLevel;
+        switch(member.membershipLevel) {
+            case "bronze": {
+                membershipLevel.classList.add("bronze");
+                break;
+            }
+            case "silver": {
+                membershipLevel.classList.add("silver");
+                break;
+            } 
+            case "gold": {
+                membershipLevel.classList.add("gold");
+                break;
+            }
+            default: {
+                break;
+            }
+        }
+
 
         section.appendChild(image);
         section.appendChild(name);

@@ -485,7 +485,7 @@ tr:nth-child(even) {
 .list section {
 	display: grid;
 	grid-template-columns: 1fr;
-    box-shadow: 0;
+    box-shadow: none;
     border-radius: 0;
 	margin: 0;
     padding: 10px;
@@ -509,12 +509,45 @@ section p {
 	font-size: smaller;
 }
 
-section a {
-	color: rgb(68, 133, 113);
-	letter-spacing: 1.1pt;
+.grid h3, .list h3 {
+    text-transform: capitalize;
+}
+
+.grid section a, .list section a {
+	color: rgb(0, 32, 23);
+}
+
+.dark .grid section a, .dark .list section a {
+	color: rgb(133, 255, 218);
 }
 
 .grid img, .list img {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+.bronze {
+    border-bottom: 2px solid rgb(204, 116, 0);
+}
+
+.silver {
+    border-bottom: 5px solid rgb(102, 102, 102);
+}
+
+.gold {
+    border-bottom: 15px solid gold;
+}
+
+.bronze::before {
+    content: "🥉";
+}
+
+.silver::before {
+    content: "🥈";
+}
+
+/* 🥉🥇🪙🥈😎🤑😗🧐🤓 */
+
+.gold::before {
+    content: "🥇";
 }
