@@ -32,7 +32,7 @@
         <ul>
             <li><a aria-label="home page" href="index.html">Home</a></li>
             <li><a aria-label="discovery" href="discover.html">Discovery</a></li>
-            <li><a aria-label="directory" href="#">Directory</a></li>
+            <li><a aria-label="directory" href="directory.html">Directory</a></li>
             <li><a aria-label="join" href="join.html">Join</a></li>
         </ul>
     </nav>
@@ -47,12 +47,12 @@
                 <label for="last-name" class="required">Last Name</label>
                 <input type="text" id="last-name" name="last-name" required>
                 <label for="title-position" class="required">Title/Position</label>
-                <input type="text" id="title-position" name="title-position" required title="only aphanumeric, hyphens and spaces, min 7 chars" pattern="[a-zA-Z0-9- ]{7,}"
+                <input type="text" id="title-position" name="title-position" required title="only aphanumeric, hyphens and spaces, min 7 chars" pattern="[a-zA-Z0-9 \-]{7,}"
                 placeholder="min 7 chars, alphanumeric, hyphens and spaces">
                 <label for="email" class="required">Email</label>
                 <input type="email" id="email" name="email" 
                 required title="Please enter a valid email address" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                placeholder="Enter you byu student email">
+                placeholder="example@example.com">
                 <label for="phone-number" class="required">Mobile Phone Number</label>
                 <input type="tel" id="phone-number" name="phone-number" required>
                 <label for="buisness-name" class="required">Buisness/Organization's Name</label>
@@ -68,7 +68,7 @@
                 <textarea rows="6" name="buisness-description" id="buisness-description" placeholder="Describe you Buisness/Organization"></textarea>
                 <input type="hidden" id="timestamp" name="timestamp">
                 <label for="submit">Submit Form</label>
-                <button type="submit" id="submit">Submit</button>
+                <button type="submit" id="submit">Join</button>
             </form>
         </div>
         <div class="benefits">

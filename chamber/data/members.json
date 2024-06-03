@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Air Armenia",
+            "address": "21 Gevorg Kochar Str. Yerevan 0009, Armenia",
+            "phoneNumber": "+374-10-547999",
+            "websiteURL": "https://web.archive.org/web/20110706072319/http://www.air.am/",
+            "image": "https://web.archive.org/web/20110706072335im_/http://www.air.am/images/logo.gif",
+            "membershipLevel": "bronze"
+        },
+        {
+            "name": "Ameriabank",
+            "address": "Vazgen Sargsyan 2, Yerevan 0010, Armenia",
+            "phoneNumber": "+374-10-561111",
+            "websiteURL": "https://ameriabank.am/",
+            "image": "https://ameriabank.am/Portals/0/Logo/Ameriabank%20green.svg?ver=2020-06-23-132200-427",
+            "membershipLevel": "bronze"
+        },
+        {
+            "name": "Multi Group Ararat Cement",
+            "address": "Shahumyan 5, Ararat 0602, Armenia",
+            "phoneNumber": "+374-234-41737",
+            "websiteURL": "https://www.araratcement.am/",
+            "image": "https://www.araratcement.am/img/design-elements/mglogo_ed.png",
+            "membershipLevel": "silver"
+        },
+        {
+            "name": "Ardshinbank",
+            "address": "Grigor Lusavorich 13, Yerevan 0015, Armenia",
+            "phoneNumber": "+374-12-222222",
+            "websiteURL": "https://ardshinbank.am/",
+            "image": "https://ardshinbank.am/logos/logo-header.svg",
+            "membershipLevel": "gold"
+        },
+        {
+            "name": "Armenia TV",
+            "address": "Ervand Ave 1, Yervan ####, Armenia",
+            "phoneNumber": "+374-10-369344",
+            "websiteURL": "https://armeniatv.am/",
+            "image": "https://armeniatv.am/assets/img/logo.svg",
+            "membershipLevel": "gold"
+        },
+        {
+            "name": "Armenia 2",
+            "address": "Ajapnyak 3/1, Yerevan 0088, Armenia",
+            "phoneNumber": "+374-10-338831",
+            "websiteURL": "https://tv.am/en",
+            "image": "https://i.imgur.com/AXmXw9X.png",
+            "membershipLevel": "gold"
+        },
+        {
+            "name": "ArmSwissBank",
+            "address": "Vazgen Sargsyan 10, Yerevan 0010, Armenia",
+            "phoneNumber": "+374-60-757000",
+            "websiteURL": "https://banks.am/en/banks/Armswissbank",
+            "image": "https://banks.am/static/images/logo_main.png",
+            "membershipLevel": "silver"
+        }
+    ]
+}

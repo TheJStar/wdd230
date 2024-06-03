@@ -92,6 +92,9 @@ nav ul li {
 nav ul li a{
     color: var(--background-color);
     text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 10px 10px 0 10px;
 }
 
 nav ul li:hover {
@@ -121,6 +124,7 @@ nav ul li:hover {
 }
 
 #hero a {
+    transition: all 1s;
     margin: 20px;
     width: 180px;
     height: 50px;
@@ -132,6 +136,11 @@ nav ul li:hover {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     box-shadow: 0 0 10px black;
+}
+
+#hero a:hover {
+    transition: all 1s;
+    box-shadow: 0 0 30px rgb(255, 255, 255);
 }
 
 main {
@@ -259,6 +268,10 @@ header, footer {
 
 .dark {
     background-color: #141414;
+    color: white;
+}
+
+.dark #hero a {
     color: white;
 }
 
@@ -416,4 +429,78 @@ td, th {
 
 tr:nth-child(even) {
     background-color: var(--active);
+}
+
+/* Directory */
+
+.grid {
+    grid-column: 1 / 2;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+    grid-column: 1 / 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
 }

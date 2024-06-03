@@ -7,11 +7,11 @@
     <meta name="description" content="Chamber of Commerce, a website for our communities buisnesses and ongoing events, WDD 230, Joel Ayvazyan, Web Frontend Development">
     <meta name="author" content="Joel Ayvazyan">
     <meta name="og:title" content="Chamber of Commerce - WDD 230 Joel Ayvazyan">
-    <meta name="og:type" content="chamber news">
+    <meta name="og:type" content="chamber directory">
     <meta name="og:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
     <meta name="og:url" content="https://thejstar.github.io/wdd230/chamber">
     <meta name="twitter:title" content="Chamber of Commerce - WDD 230 Joel Ayvazyan">
-    <meta name="twitter:type" content="chamber news">
+    <meta name="twitter:type" content="chamber directory">
     <meta name="twitter:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
     <meta name="twitter:url" content="https://thejstar.github.io/wdd230/chamber">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,56 +36,44 @@
             <li><a aria-label="join" href="join.html">Join</a></li>
         </ul>
     </nav>
-    <div id="hero">
-        <img src="https://source.unsplash.com/random/1000x300?blur" alt="hero">
-        <a href="join.html">Join Our Chamber</a>
-    </div>
+
     <main>
-        <h1>Chamber of Commerce of Armenia</h1>
-        <section id="events" class="card">
-            <h2>Events</h2>
-            <div>
-                <h3>Epic Event</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Doloribus quidem suscipit commodi ullam nobis porro veritatis 
-                    quo ducimus non accusantium, recusandae itaque. Nisi, inventore 
-                    amet at maiores obcaecati voluptatum velit!
-                </p>
-            </div>
-        </section>
-        <section id="weather" class="card">
-            <h2>Information</h2>
-            <div>
-                <h3>Yerevan, Armenia</h3>
-                <p>The current temperature is <span id="current-temp">&deg;C</span></p>
-                <figure>
-                    <img id="weather-icon" src="#" alt="weather event icon" loading="lazy" width="50" height="50">
-                    <figcaption></figcaption>
-                </figure>
-            </div>
-            <div>
-                <span>Visits: </span><span class="visits"></span>
-            </div>
-        </section>
-        <section class="spotlight">
-            <h2>Comapny 1</h2>
-            <div>
-                <p>Detail Text</p>
-            </div>
-        </section>
-        <section class="spotlight">
-            <h2>Comapny 2</h2>
-            <div>
-                <p>Detail Text</p>
-            </div>
-        </section>
-        <section class="spotlight">
-            <h2>Comapny 3</h2>
-            <div>
-                <p>Detail Text</p>
-            </div>
-        </section>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <article id="directory" class="grid">
+            <section>
+                <img src="https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg" alt="Payson Utah Temple" />
+                <h3>Payson Utah</h3>
+                <p>2015</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng" target="_blank">Details</a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/c6/07/c6077e1778bfdf5a91569ab3acf57e9c31a7175f/boise_idaho_temple_sunshine.jpeg" alt="Boise Idaho Temple" />
+                <h3>Boise Idaho</h3>
+                <p>1984</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng" target="_blank">Details
+                </a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/83/16/831688ef82fcab202e941ed8fd5869b28f9b5db11086883/oakland_california_temple_exterior.jpeg" alt="Oakland California Temple" />
+                <h3>Oakland California</h3>
+                <p>1964</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng" target="_blank">Details </a>
+            </section>
+    
+            <section>
+                <img src="https://assets.ldscdn.org/72/14/7214efb047426ffe6b581906fa0092a624ebc637/seattle_washington_temple_exterior.jpg" alt="Seattle Washington Temple" />
+                <h3>Seattle Washington</h3>
+                <p>1980</p>
+                <a href="https://www.churchofjesuschrist.org/temples/details/seattle-washington-temple?lang=eng" target="_blank">Details</a>
+            </section>
+        </article>
     </main>
+
     <footer>
         <div id="details">
             <p>&copy; <span id="copyRightDate"></span> | Joel Ayvazyan | Armenia</p>
@@ -104,7 +92,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/themeChanger.js"></script>
-    <script src="scripts/getWeather.js"></script>
-    <script src="scripts/visitCounter.js"></script>
+    <script src="scripts/veiwChanger.js"></script>
 </body>
 </html>

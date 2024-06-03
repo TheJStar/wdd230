@@ -10,6 +10,8 @@ const h2 = document.querySelectorAll("h2");
 const person = document.querySelector(".person-name");
 const cardListItems = document.querySelectorAll(".week");
 const html = document.querySelector("html");
+// make it so it remembers the theme using local storage
+// let theme = Boolean(window.localStorage.getItem("theme")) || "light";
 let light = true;
 
 themeButton.addEventListener('click', () => {
@@ -35,18 +37,20 @@ themeButton.addEventListener('click', () => {
         h.classList.toggle("dark");
     })
     if (light) {
-        light = false
+        light = false;
         html.style.setProperty("--base-color", "#2d5d4d");
         html.style.setProperty("--background-color", "#141414");
         html.style.setProperty("--text-color", "white");
         html.style.setProperty("--accent-color", "aqua");
     } else {
-        light = true
+        light = true;
         html.style.setProperty("--base-color", "aquamarine");
         html.style.setProperty("--background-color", "white");
         html.style.setProperty("--text-color", "black");
         html.style.setProperty("--accent-color", "blue");
     }
+
+    // localStorage.setItem("theme", theme);
 });
 
 // this is used to changedthe prefered colors making it shorter 
