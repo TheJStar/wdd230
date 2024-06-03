@@ -1,5 +1,5 @@
 html {
-    --base-color: aquamarine;
+    --base-color: rgb(106, 209, 175);
     --background-color: white;
     --text-color: black;
     --accent-color: blue;
@@ -9,6 +9,11 @@ html {
 
 * {
     margin: 0;
+}
+
+*::selection {
+    background-color: #53a78b;
+    color: #18332a;
 }
 
 body {
@@ -84,7 +89,7 @@ nav ul {
 
 nav ul li {
     height: 40px;
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
     align-content: center;
 }
@@ -112,7 +117,7 @@ nav ul li:hover {
     background-color: #2d5d4d;
 }
 
-#hero img {
+#hero img, #hero picture {
     /* height: 300px; */
     grid-column: 2 / 3;
     grid-row: 1 / 3;
@@ -141,6 +146,7 @@ nav ul li:hover {
 #hero a:hover {
     transition: all 1s;
     box-shadow: 0 0 30px rgb(255, 255, 255);
+    animation: glow 1s ease-in-out 0.5s infinite;
 }
 
 main {
@@ -153,9 +159,9 @@ main {
 
 main section {
     border: 1px solid darkgray;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 5px 10px rgb(33, 126, 74);
     min-height: 180px;
 }
 
@@ -220,6 +226,7 @@ footer div {
 }
 
 #footer-tech {
+    padding-top: 5px;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     display: flex;
@@ -242,8 +249,8 @@ h2 {
     background-color: var(--base-color);
     height: 30px;
     padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
 }
 
 header, footer {
@@ -317,7 +324,7 @@ h2.dark {
     grid-row: 1 / 2;
     min-width: 40%;
     max-width: 500px;
-    margin: 0 10%;
+    margin: 15px 10%;
     display: flex;
     flex-direction: column;
 }
@@ -411,6 +418,7 @@ button[type="submit"]:hover {
     z-index: -1;
     width: 100%;
     align-items: center;
+    margin: 15px 0;
 }
 
 table {
@@ -451,13 +459,14 @@ tr:nth-child(even) {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
-	align-items: center;
+	align-items: start;
 }
 
 .grid section {
 	text-align: center;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .grid h2 {
@@ -521,9 +530,10 @@ section p {
 	color: rgb(133, 255, 218);
 }
 
-.grid img, .list img {
+.grid img {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
+    border-radius: 5px;
 }
 
 .bronze {
@@ -550,4 +560,14 @@ section p {
 
 .gold::before {
     content: "🥇";
+}
+
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 30px white;
+    }
+    50% {
+        box-shadow: 0 0 50px white;
+    }
 }

@@ -37,7 +37,12 @@
         </ul>
     </nav>
     <div id="hero">
-        <img src="https://source.unsplash.com/random/1000x300?blur" alt="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" alt="hero image of Armenia">
+        </picture>
+        <!-- <img src="https://source.unsplash.com/random/1000x300?blur" alt="hero"> -->
         <a href="join.html">Join Our Chamber</a>
     </div>
     <main>
@@ -68,21 +73,21 @@
             </div>
         </section>
         <section class="spotlight">
-            <h2>Comapny 1</h2>
+            <h2>Ardshinbank</h2>
             <div>
-                <p>Detail Text</p>
+                <p>Armenias Greatest bank</p>
             </div>
         </section>
         <section class="spotlight">
-            <h2>Comapny 2</h2>
+            <h2>Armenia TV</h2>
             <div>
-                <p>Detail Text</p>
+                <p>Armeanias fun TV channal</p>
             </div>
         </section>
         <section class="spotlight">
-            <h2>Comapny 3</h2>
+            <h2>Armenia 2</h2>
             <div>
-                <p>Detail Text</p>
+                <p>Armenias classic channal</p>
             </div>
         </section>
     </main>
