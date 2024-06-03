@@ -443,15 +443,24 @@ tr:nth-child(even) {
 
 .grid section {
 	text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid h2 {
+    font-size: large;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+	display: block;
+    margin: 5px auto;
 }
 
-.grid h3 {
-	font-family: "Caveat", cursive;
+.grid p {
+    margin: 5px 0;
 }
 
 .list {
@@ -462,30 +471,24 @@ tr:nth-child(even) {
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+    box-shadow: 0;
+    border-radius: 0;
 	margin: 0;
-    padding: 0.25rem;
+    padding: 10px;
+    border: 0;
 }
 
-.list section > * {
-	margin: 0 1rem;
+.list h2 {
+    border-radius: 0;
 }
 
 .list section img {
 	display: none; /* smaller viewports only */
 }
 
-.list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
-}
-
 .list section:nth-child(even) {
-	background-color: #bed;
-}
-
-section h3 {
-	font-size: 1.5rem;
+	background-color: rgba(0, 128, 85, 0.534);
 }
 
 section p {
@@ -494,13 +497,11 @@ section p {
 }
 
 section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
+	color: rgb(68, 133, 113);
 	letter-spacing: 1.1pt;
 }
 
-img {
+.grid img, .list img {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
 }

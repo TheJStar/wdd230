@@ -1,6 +1,6 @@
 const companiesURL = "https://TheJStar.github.io/wdd230/chamber/data/members.json";
 
-async function getLinks(url) {
+async function getCompanies(url) {
     try {
         const respons = await fetch(url);
         if (respons.ok) {
@@ -20,13 +20,13 @@ async function getLinks(url) {
 
 function displayCompanies(companies) {
     const artical = document.querySelector("#directory");
-    companies.members.foreach(member => {
+    companies.members.forEach(member => {
         const section = document.createElement("section");
 
         const name = document.createElement("h2");
         name.textContent = member.name;
         const address = document.createElement("p");
-        address.textContent = member.adress
+        address.textContent = member.address;
         const phoneNumber = document.createElement("p");
         phoneNumber.textContent = member.phoneNumber;
         const website = document.createElement("a");
@@ -38,35 +38,15 @@ function displayCompanies(companies) {
         const membershipLevel = document.createElement("h3");
         membershipLevel.textContent = member.membershipLevel;
 
+        section.appendChild(image);
         section.appendChild(name);
+        section.appendChild(website);
         section.appendChild(address);
         section.appendChild(phoneNumber);
-        section.appendChild(website);
-        section.appendChild(image);
         section.appendChild(membershipLevel);
 
         artical.appendChild(section);
     });
 }
 
-function displayLinks(links) {
-    const card = document.querySelector("#assignments");
-    const ul = document.createElement("ul");
-    links.weeks.forEach(week => {
-        const li = document.createElement("li");
-        li.classList.add("week");
-        li.textContent = week.week + ": ";
-        week.links.forEach(link => {
-            const a = document.createElement("a");
-            a.ariaLabel = "assignment";
-            a.href = link.url;
-            a.textContent = link.title;
-            li.appendChild(a);
-            li.innerHTML += " | ";
-        })
-        ul.appendChild(li);
-        card.appendChild(ul);
-    });
-}
-
-getLinks(companiesURL);
+getCompanies(companiesURL);
