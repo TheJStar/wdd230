@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joel Ayvazyan - WDD 230 - Web Frontent Development</title>
-    <meta name="description" content="WDD 230, Joel Ayvazyan, Web Frontend Development course assignment portal, homepage">
+    <title>Chamber of Commerce - Thank you page - WDD 230 Joel Ayvazyan</title>
+    <meta name="description" content="Chamber of Commerce, Thank you page for joing our community, WDD 230, Joel Ayvazyan, Web Frontend Development">
     <meta name="author" content="Joel Ayvazyan">
-    <meta name="og:title" content="WDD 230 Joel Ayvazyan">
-    <meta name="og:type" content="assignment">
-    <meta name="og:image" content="https://thejstar.github.io/wdd230/images/joel-ayvazyan-photo.jpg">
-    <meta name="og:url" content="https://thejstar.github.io/wdd230">
-    <meta name="twitter:title" content="WDD 230 Joel Ayvazyan">
-    <meta name="twitter:type" content="assignment">
-    <meta name="twitter:image" content="https://thejstar.github.io/wdd230/images/joel-ayvazyan-photo.jpg">
-    <meta name="twitter:url" content="https://thejstar.github.io/wdd230">
+    <meta name="og:title" content="Chamber of Commerce - Thank you page - WDD 230 Joel Ayvazyan">
+    <meta name="og:type" content="chamber thank you page">
+    <meta name="og:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="og:url" content="https://thejstar.github.io/wdd230/chamber">
+    <meta name="twitter:title" content="Chamber of Commerce - Thank you page - WDD 230 Joel Ayvazyan">
+    <meta name="twitter:type" content="chamber thank you page">
+    <meta name="twitter:image" content="https://thejstar.github.io/wdd230/chamber/images/chamber-logo.png">
+    <meta name="twitter:url" content="https://thejstar.github.io/wdd230/chamber">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <div>
+    <header>
+        <div></div>
+        <img id="logo" src="images/chamber-logo.webp" alt="Logo">
+    </header>
+    <button type="button" id="menu" aria-label="hamburger"></button>
+    <nav id="navigation">
+        <ul>
+            <li><a aria-label="home page" href="index.html">Home</a></li>
+            <li><a aria-label="discovery" href="discover.html">Discovery</a></li>
+            <li><a aria-label="directory" href="directory.html">Directory</a></li>
+            <li><a aria-label="join" href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <div class="thank-you">
         <h3>Form has been Submited</h3>
         <h1>Successfully</h1>
         <h3>Thank you for Joining us we really appreciate it</h3>
@@ -31,5 +45,25 @@
         <h4>You are cool!</h4>
         <a aria-label="home page" href="index.html">Go back to Home page</a>
     </div>
+    <footer>
+        <div id="details">
+            <p>&copy; <span id="copyRightDate"></span> | Joel Ayvazyan | Armenia</p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="contacts">
+            <h3>Contacts</h3>
+            <p>kingoflightj@gmail.com</p>
+            <p>+374(43)917102</p>
+        </div>
+        <div id="footer-tech">
+            <img src="images/chamber-logo.webp" alt="Logo">
+            <button type="button" id="theme" aria-label="dark mode button"></button>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/themeChanger.js"></script>
+    <script src="scripts/getWeather.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 </html>

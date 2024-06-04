@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-div {
+.thank-you {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,7 @@ div {
     min-height: 100vh;
 }
 
-div p {
+.thank-you p {
     font-size: 50px;
     animation: tither 2s infinite ease-in-out;
 }
@@ -47,7 +47,7 @@ div p {
     }
 }
 
-a {
+.thank-you a {
     transition: all 1s;
     display: inline;
     border-radius: 5px;
@@ -59,7 +59,7 @@ a {
     border: 0;
 }
 
-a:hover {
+.thank-you a:hover {
     transition: all 1s;
     background-color: white;
     color: #2d5d4d;
